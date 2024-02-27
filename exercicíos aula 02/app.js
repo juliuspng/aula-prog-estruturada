@@ -231,8 +231,8 @@ console.log(bookMessage);
 */
 
 const name = 'walter white';
-let newName = (`{$name.slice(1) + $name.toUppercase()}`)
-console.log(newName)
+let newName = (`${name.replace(/w/g, 'W')}`);
+console.log(newName);
 
 /*
 22 - Comente o console.log acima, e,
