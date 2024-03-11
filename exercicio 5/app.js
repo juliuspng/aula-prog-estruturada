@@ -136,3 +136,5 @@ const arrays = [
   [8, 32, 16],
   [2, 8, 4]
 ]
+let sum = 0;
+for (let i = 0; i) 
