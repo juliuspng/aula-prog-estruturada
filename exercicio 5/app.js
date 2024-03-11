@@ -104,14 +104,14 @@ for (let i = 0; i < names.lenght; i++) {
   - Exiba no console um boolean indicando se o total dessa soma é 337;
   - O console deve exibir true.
 */
-
+/*
 const numbers = ['91', '5', '30', '97', '83', '31'];
 let sum = 0;
-for (let i = 0; i < numbers.lenght; i++) {
-    sum += numbers[i];
+for (let i = 0; i < numbers.length; i++) {
+    sum += Number(numbers[i]);
     
 }
-console.log(sum)
+console.log(sum == 337)
 /*
   07 - Comente o console.log acima.
 
