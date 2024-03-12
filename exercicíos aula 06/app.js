@@ -90,7 +90,15 @@ if (idade<=7) {
 */
 
 const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
+const numbersnovo = []
 
+for(let i = 0; i < numbers.length; i ++) {
+    if (numbers[i] >= 11 && numbers[i] <= 90) {
+        numbersnovo.push(numbers[i])
+    }
+}
+
+console.log(numbersnovo)
 /*
   05
 
@@ -106,7 +114,7 @@ const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
 
 const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false]
 
-
+//não faço ideia
 
 /*
   06
@@ -127,10 +135,21 @@ const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false
 
 const randomNumbers = [73, 4, 67, 10, 31, 58]
 
-for(x=0;x<=9.;x++) {
-    if (randomNumbers[x] % 2 == 0)
-    console.log('o número é par')
+const impar = []
+const par = []
+
+for (let i = 0; i < randomNumbers.length; i++) {
+    if (randomNumbers[i] % 2 === 0) {
+        par.push(randomNumbers[i]);
+    } else {
+        impar.push(randomNumbers[i]);
+    }
 }
+
+const imparesfrase = impar.join(', ');
+const paresfrase = par.join(', ');
+
+console.log(`Numeros ímpares: ${imparesfrase}. Números par: ${paresfrase}.`);
 
 
 
