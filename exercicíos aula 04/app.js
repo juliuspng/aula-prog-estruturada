@@ -16,9 +16,11 @@
 const my3FavoriteTVShows = ['avatar the last airbender', 'the office', 'love death and robots']; 
 const sentence = 'Minhas 3 séries favoritas são: SÉRIE_01, SÉRIE_02 e SÉRIE_03.';
 
-const sentencenova = `Minhas 3 séries favoritas são : ${my3FavoriteTVShows[0]},${my3FavoriteTVShows[1]} e ${my3FavoriteTVShows[2]}.`;
-
-console.log (`Minhas 3 séries favoritas são ${sentencenova}`)
+const novasentence = sentence
+ .replace('SÉRIE_01', my3FavoriteTVShows[0])
+ .replace('SÉRIE_02', my3FavoriteTVShows[1])
+ .replace('SÉRIE_03', my3FavoriteTVShows[2]);
+//console.log(novasentence)
 
 /*
   02 - Comente o console.log() acima e:
@@ -41,7 +43,8 @@ let checkbool = my3FavoriteTVShows.length == 3
 */
 
 const randomTVShow = 'Watchmen'
-
+const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
+//console.log(isRandomTVShowIncluded)
 
 /*
   04 - Comente o console.log() acima e:
@@ -54,6 +57,10 @@ const randomTVShow = 'Watchmen'
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
 
+const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armazena é: 
+${typeof isRandomTVShowIncluded}.`;
+
+//console.log(typeSentence);
 
 
 /*
@@ -70,7 +77,7 @@ const randomTVShow = 'Watchmen'
   caracteres? BOOLEAN."
 */
 
-
+//não entendi essa 
 
 /*
   06 - Comente o console.log() acima e:
@@ -84,6 +91,8 @@ const randomTVShow = 'Watchmen'
 
 const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
 
+//nem essa
+
 /*
   07 - Comente o console.log() acima e:
 
@@ -93,6 +102,10 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Você sabe por que essa conversão resultou em true?
 */
 
+const crazyOperation = null + 1;
+const crazyConversion = Boolean(crazyOperation);
+//console.log(crazyConversion)
+//null pode ser lido como um valor falso so que em uma operação de adição ele resulta em 0 assim 0 + 1 = 1(assim se tornando um valor verdadeiro)
 
 
 /*
@@ -108,6 +121,11 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   é: BOOLEAN."
 */
 
+const ages = [31, 82, 61, 11]
+const agesSum = ages[0] + ages[2];
+const menorigual92 = agesSum <= 92;
+
+//console.log(`A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação é: ${menorigual92}.`);
 
 
 /*
@@ -119,7 +137,8 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Exiba a "isNotAString" no console.
 */
 
-
+const isNotAString = typeof randomTVShow !== 'string';
+//console.log(isNotAString)
 
 /*
   10 - Comente o console.log() acima e:
@@ -130,3 +149,6 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10]
+
+const temnumero8 = evenNumbers.indexOf(8) !== - 1;
+console.log(temnumero8)
